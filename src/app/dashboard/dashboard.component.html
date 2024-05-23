@@ -1,0 +1,72 @@
+<body>
+    <!-- <mat-card>
+        <b><span class="title-center">Management-Dashboard</span></b>
+    </mat-card> -->
+    <mat-card class="centered-card">
+        <b><span class="title-center">Management  Dashboard</span></b>
+    </mat-card>
+    <!-- <mat-card fxLayout="column" fxLayoutAlign="center center">
+        <b><span class="title-center">Management-Dashboard</span></b>
+    </mat-card> -->
+    
+    
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card" >
+                <div class="container" >
+                    <mat-icon>category</mat-icon>
+                   <!-- <b><span class="title-center"><mat-icon>category</mat-icon></span></b>  -->
+                    <h2 class="title">Total Category:</h2>
+                    <h1 class="title">{{data?.category}}</h1>
+                    <p><button class="button" [routerLink]="['/cafe/category']">View Category</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <mat-icon>inventory_2</mat-icon>
+                    <h2 class="title">Total Product:</h2>
+                    <h1 class="title">{{data?.product}}</h1>
+                    <p><button class="button" [routerLink]="['/cafe/product']">View Product</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <mat-icon>shopping_cart</mat-icon>
+                    <h2 class="title">Total Orders:</h2>
+                    <h1 class="title">{{data?.product}}</h1>
+                    <p><button class="button" [routerLink]="['/cafe/product']">View Product</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <mat-icon>people</mat-icon>
+                    <h2 class="title">Total Users:</h2>
+                    <h1 class="title">{{data?.product}}</h1>
+                    <p><button class="button" [routerLink]="['/cafe/product']">View Product</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <mat-icon>backup_table</mat-icon>
+                    <h2 class="title">Total Bill:</h2>
+                    <h1 class="title">{{data?.bill}}</h1>
+                    <p><button class="button" [routerLink]="['/cafe/bill']">View Bill</button></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
